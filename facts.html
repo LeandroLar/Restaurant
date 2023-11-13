@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Factura del Restaurante</title>
+    
+    <!-- Enlace a Bootstrap CSS (puedes obtener el enlace actualizado desde el sitio web de Bootstrap) -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+
+    <!-- Enlace a tu archivo CSS personalizado -->
+    <link rel="stylesheet" href="styles.css">
+
+</head>
+<body>
+
+    <header class="bg-dark text-white text-center py-3">
+        <h1>Restaurante SeLaCome</h1>
+        <!--Cambiar la ruta de la imagen-->
+        <img src="\logo.png" alt="Ceviche de Camarón" width="300" height="200">
+        <p class="lead">Factura</p>
+    </header>
+
+    <section class="container mt-4">
+        <h2 class="mb-4">Detalles de la Factura</h2>
+
+        <!-- Tabla para mostrar los detalles de la factura -->
+        <table class="table">
+            <thead>
+                <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">Plato</th>
+                    <th scope="col">Precio</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Ejemplo de fila, puedes duplicar y modificar según sea necesario -->
+                <tr>
+                    <th scope="row">1</th>
+                    <td>Encebollado</td>
+                    <td>$2.50</td>
+                </tr>
+
+                <tr>
+                    <th scope="row">2</th>
+                    <td>Guatita</td>
+                    <td>$2.00</td>
+                </tr>
+
+                <tr>
+                    <th scope="row">3</th>
+                    <td>Almuerzos</td>
+                    <td>$3.50</td>
+                </tr>
+                <!-- Agrega más filas según los platos seleccionados -->
+
+                <!-- Total de la factura -->
+                <tr class="table-info">
+                    <th scope="row" colspan="2">Total</th>
+                    <td>$7.00</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <!-- Enlace para volver al menú -->
+        <a href="menu.html" class="btn btn-primary">Volver al Menú</a>
+    </section>
+
+    <!-- Scripts de Bootstrap (jQuery primero, luego Popper.js, y finalmente Bootstrap JS) -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+
+    <!-- Puedes agregar tu propio script JS si es necesario -->
+    <!-- <script src="script.js"></script> -->
+
+</body>
+</html>
